@@ -15,7 +15,6 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-<!-- Configure and load Thebe !-->
 <script type="text/x-thebe-config">
   {
     requestKernel: true,
@@ -28,7 +27,7 @@ nbclient.exceptions.CellExecutionError: An error occurred while executing the fo
 
 
 [1;36m  Cell [1;32mIn[1], line 1[1;36m[0m
-[1;33m    <!-- Configure and load Thebe !-->[0m
+[1;33m    <script type="text/x-thebe-config">[0m
 [1;37m    ^[0m
 [1;31mSyntaxError[0m[1;31m:[0m invalid syntax
 
