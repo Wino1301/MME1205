@@ -36,5 +36,5 @@ html:
 launch_buttons:
   colab_url: "https://colab.research.google.com"
   notebook_interface: "classic"  # or "classic"
-   binderhub_url: "https://mybinder.org"
-   thebe                  : true
+  binderhub_url: "https://mybinder.org/v2/gh/Wino1301/MME1205/HEAD"
+  thebe                  : true
