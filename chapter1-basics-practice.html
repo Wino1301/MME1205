@@ -417,6 +417,8 @@ document.write(`
     requestKernel: true,
     binderOptions: {
       repo: "Wino1301/MME1205",
+      binderUrl: "https://mybinder.org",
+      repoProvider: "github",
     },
   }
 </script>
@@ -427,8 +429,13 @@ var bootstrapThebe = function() {
 }
 
 document.querySelector("#activateButton").addEventListener('click', bootstrapThebe)
-</script><p>#This is a test</p>
-<div class="tex2jax_ignore mathjax_ignore section" id="python-basics">
+</script><pre data-executable="true" data-language="python">
+
+#This is a test
+</pre><pre data-executable="true" data-language="python">
+
+#This is a test
+</pre><div class="tex2jax_ignore mathjax_ignore section" id="python-basics">
 <h1>Python Basics<a class="headerlink" href="#python-basics" title="Permalink to this headline">#</a></h1>
 <p><strong>Tomas Beuzen, September 2020</strong></p>
 <p>These exercises complement <span class="xref myst">Chapter 1</span>.</p>
