@@ -411,21 +411,8 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <p><img alt="" src="../docs/banner.png" /></p>
-<script type="text/x-thebe-config">
-  {
-    requestKernel: true,
-    binderOptions: {
-      repo: "https://mybinder.org/v2/gh/Wino1301/MME1205/main",
-    },
-  }
-</script><p><button id="activateButton"  style="width: 150px; height: 45px; font-size: 1.5em;">Activate</button></p>
-<script>
-var bootstrapThebe = function() {
-    thebelab.bootstrap();
-}
-
-document.querySelector("#activateButton").addEventListener('click', bootstrapThebe)
-</script><div class="tex2jax_ignore mathjax_ignore section" id="python-basics">
+<p id="launch-thebe">#This is a test</p>
+<div class="tex2jax_ignore mathjax_ignore section" id="python-basics">
 <h1>Python Basics<a class="headerlink" href="#python-basics" title="Permalink to this headline">#</a></h1>
 <p><strong>Tomas Beuzen, September 2020</strong></p>
 <p>These exercises complement <span class="xref myst">Chapter 1</span>.</p>
@@ -441,7 +428,22 @@ document.querySelector("#activateButton").addEventListener('click', bootstrapThe
 </div>
 </div>
 </div>
-<div class="cell tag_remove-input tag_thebe-init tag_hide-input docutils container">
+<div class="cell tag_thebe-init docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Running Hidden Tests ...&quot;</span><span class="p">)</span>
+<span class="n">test_v</span> <span class="o">=</span> <span class="n">_</span>
+<span class="k">try</span><span class="p">:</span> 
+    <span class="k">assert</span> <span class="n">test_v</span> <span class="o">==</span> <span class="mi">3125</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is not the result&quot;</span><span class="p">)</span>
+    
+<span class="k">try</span><span class="p">:</span> 
+    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">test_v</span> <span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
+<span class="k">except</span><span class="p">:</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Result is not int&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running Hidden Tests ...
 This is not the result
