@@ -61,10 +61,8 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapter1-basics-practice';</script>
-    <link rel="canonical" href="https://MME1205_spr.html/chapter1-basics-practice.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Chapter 1: Python Basics" href="chapter1-basics.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
   </head>
@@ -155,12 +153,10 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter1-basics.html">Chapter 1: Python Basics</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Python Basics</a></li>
 </ul>
 
     </div>
@@ -389,20 +385,15 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <!-- Configure and load Thebe !-->
-<script type="text/x-thebe-config">
-  {
-    requestKernel: true,
-    binderOptions: {
-      repo: "Wino1301/MME1205",
-      binderUrl: "https://mybinder.org",
-      repoProvider: "github",
-    },
-  }
-</script>
-<div class="thebe-activate" />
-<div class="thebe-status" />
-<script src="https://unpkg.com/thebe@latest/lib/index.js"></script><p><button id="activateButton"  style="width: 150px; height: 45px; font-size: 1.5em;">Activate</button></p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="python-basics">
+<h1>Python Basics<a class="headerlink" href="#python-basics" title="Permalink to this headline">#</a></h1>
+<p><strong>Tomas Beuzen, September 2020</strong></p>
+<p>These exercises complement <span class="xref myst">Chapter 1</span>.</p>
+<div class="section" id="exercises">
+<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">#</a></h2>
+<div class="section" id="id1">
+<h3>1.<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<p><button id="activateButton"  style="width: 150px; height: 45px; font-size: 1.5em;">Activate</button></p>
 <script>
 var bootstrapThebe = function() {
     thebelab.bootstrap();
@@ -412,123 +403,53 @@ document.querySelector("#activateButton").addEventListener('click', bootstrapThe
 </script><pre data-executable="true" data-language="python">
 
 #This is a markdown test
-</pre><div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">pre</span> <span class="n">data</span><span class="o">-</span><span class="n">executable</span><span class="o">=</span><span class="s2">&quot;true&quot;</span> <span class="n">data</span><span class="o">-</span><span class="n">language</span><span class="o">=</span><span class="s2">&quot;python&quot;</span><span class="o">&gt;</span>
+</pre><pre data-executable="true" data-language="python">
 
-<span class="c1">#This is a test</span>
-<span class="o">&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-    <span class="o">&lt;</span><span class="n">pre</span> <span class="n">data</span><span class="o">-</span><span class="n">executable</span><span class="o">=</span><span class="s2">&quot;true&quot;</span> <span class="n">data</span><span class="o">-</span><span class="n">language</span><span class="o">=</span><span class="s2">&quot;python&quot;</span><span class="o">&gt;</span>
-    <span class="o">^</span>
-<span class="ne">SyntaxError</span>: invalid syntax
-</pre></div>
-</div>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="python-basics">
-<h1>Python Basics<a class="headerlink" href="#python-basics" title="Permalink to this headline">#</a></h1>
-<p><strong>Tomas Beuzen, September 2020</strong></p>
-<p>These exercises complement <span class="xref myst">Chapter 1</span>.</p>
-<div class="section" id="exercises">
-<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">#</a></h2>
-<div class="section" id="id1">
-<h3>1.<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
-<p>What is 5 to the power of 5?</p>
-<div class="cell tag_thebe-init docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">pre</span> <span class="n">data</span><span class="o">-</span><span class="n">executable</span><span class="o">=</span><span class="s2">&quot;true&quot;</span> <span class="n">data</span><span class="o">-</span><span class="n">language</span><span class="o">=</span><span class="s2">&quot;python&quot;</span><span class="o">&gt;</span>
-<span class="c1"># Your Answer Here</span>
-<span class="o">&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-    <span class="o">&lt;</span><span class="n">pre</span> <span class="n">data</span><span class="o">-</span><span class="n">executable</span><span class="o">=</span><span class="s2">&quot;true&quot;</span> <span class="n">data</span><span class="o">-</span><span class="n">language</span><span class="o">=</span><span class="s2">&quot;python&quot;</span><span class="o">&gt;</span>
-    <span class="o">^</span>
-<span class="ne">SyntaxError</span>: invalid syntax
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell tag_thebe-init docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">pre</span> <span class="n">data</span><span class="o">-</span><span class="n">executable</span><span class="o">=</span><span class="s2">&quot;false&quot;</span> <span class="n">data</span><span class="o">-</span><span class="n">language</span><span class="o">=</span><span class="s2">&quot;python&quot;</span><span class="o">&gt;</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Running Hidden Tests ...&quot;</span><span class="p">)</span>
-<span class="n">test_v</span> <span class="o">=</span> <span class="n">_</span>
-<span class="k">try</span><span class="p">:</span> 
-    <span class="k">assert</span> <span class="n">test_v</span> <span class="o">==</span> <span class="mi">3125</span>
-<span class="k">except</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is not the result&quot;</span><span class="p">)</span>
+#This is a test
+</pre><p>What is 5 to the power of 5?</p>
+<pre data-executable="true" data-language="python">
+# Your Answer Here
+</pre><pre data-executable="false" data-language="python">
+print("Running Hidden Tests ...")
+test_v = _
+try: 
+    assert test_v == 3125
+except:
+    print("This is not the result")
     
-<span class="k">try</span><span class="p">:</span> 
-    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">test_v</span> <span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
-<span class="k">except</span><span class="p">:</span> 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Result is not int&quot;</span><span class="p">)</span>
+try: 
+    assert isinstance(test_v , int)
+except: 
+    print("Result is not int")
 
-<span class="o">&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-    <span class="o">&lt;</span><span class="n">pre</span> <span class="n">data</span><span class="o">-</span><span class="n">executable</span><span class="o">=</span><span class="s2">&quot;false&quot;</span> <span class="n">data</span><span class="o">-</span><span class="n">language</span><span class="o">=</span><span class="s2">&quot;python&quot;</span><span class="o">&gt;</span>
-    <span class="o">^</span>
-<span class="ne">SyntaxError</span>: invalid syntax
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell tag_hide-input docutils container">
-<details class="hide above-input">
-<summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell source</span>
-<span class="expanded">Hide code cell source</span>
-</summary>
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">pre</span> <span class="n">data</span><span class="o">-</span><span class="n">executable</span><span class="o">=</span><span class="s2">&quot;false&quot;</span> <span class="n">data</span><span class="o">-</span><span class="n">language</span><span class="o">=</span><span class="s2">&quot;python&quot;</span><span class="o">&gt;</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Running Hidden Tests ...&quot;</span><span class="p">)</span>
-<span class="n">test_v</span> <span class="o">=</span> <span class="n">_</span>
-<span class="k">try</span><span class="p">:</span> 
-    <span class="k">assert</span> <span class="n">test_v</span> <span class="o">==</span> <span class="mi">3125</span>
-<span class="k">except</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is not the result&quot;</span><span class="p">)</span>
+</pre>
+<pre data-executable="false" data-language="python">
+print("Running Hidden Tests ...")
+test_v = _
+try: 
+    assert test_v == 3125
+except:
+    print("This is not the result")
     
-<span class="k">try</span><span class="p">:</span> 
-    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">test_v</span> <span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
-<span class="k">except</span><span class="p">:</span> 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Result is not int&quot;</span><span class="p">)</span>
+try: 
+    assert isinstance(test_v , int)
+except: 
+    print("Result is not int")
 
-<span class="o">&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</pre><pre data-executable="false" data-language="python">
+print("Running Hidden Tests ...")
+test_v = _
+try: 
+    assert test_v == 3125
+except:
+    print("This is not the result")
+    
+try: 
+    assert isinstance(test_v , int)
+except: 
+    print("Result is not int")
+
 </pre></div>
-</div>
-</div>
-</details>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-    <span class="o">&lt;</span><span class="n">pre</span> <span class="n">data</span><span class="o">-</span><span class="n">executable</span><span class="o">=</span><span class="s2">&quot;false&quot;</span> <span class="n">data</span><span class="o">-</span><span class="n">language</span><span class="o">=</span><span class="s2">&quot;python&quot;</span><span class="o">&gt;</span>
-    <span class="o">^</span>
-<span class="ne">SyntaxError</span>: invalid syntax
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-    <span class="o">&lt;</span><span class="n">pre</span> <span class="n">data</span><span class="o">-</span><span class="n">executable</span><span class="o">=</span><span class="s2">&quot;false&quot;</span> <span class="n">data</span><span class="o">-</span><span class="n">language</span><span class="o">=</span><span class="s2">&quot;python&quot;</span><span class="o">&gt;</span>
-    <span class="o">^</span>
-<span class="ne">SyntaxError</span>: invalid syntax
-</pre></div>
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 
@@ -563,15 +484,6 @@ document.querySelector("#activateButton").addEventListener('click', bootstrapThe
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="chapter1-basics.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Chapter 1: Python Basics</p>
-      </div>
-    </a>
 </div></div>
   
 </div>

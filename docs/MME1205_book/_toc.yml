@@ -7,5 +7,4 @@ chapters:
 - file: markdown
 - file: notebooks
 - file: markdown-notebooks
-- file: chapter1-basics
-- file: chapter1-basics-practice
+- file: thebe-test
