@@ -12,6 +12,7 @@ kernelspec:
   name: python3
 ---
 
+(launch:thebe)=
 # Example of Live Feedback In Class
 
 +++
@@ -32,14 +33,14 @@ This page serves as an exmaple to use Thebe in live class
 
 Return the value of raising 5 to the power of 10
 
-```{code-cell}
+```{code-cell} ipython3
 :tags: [thebe-init]
 
 #Your code here
 5**10
 ```
 
-```{code-cell}
+```{code-cell} ipython3
 :tags: [thebe-init]
 
 # Only thebe-init tag
@@ -65,7 +66,7 @@ else:
     print("All good!")
 ```
 
-```{code-cell}
+```{code-cell} ipython3
 :tags: [thebe-init, hide-input]
 
 # thebe-init + hide-input
@@ -91,7 +92,7 @@ else:
     print("All good!")
 ```
 
-```{code-cell}
+```{code-cell} ipython3
 :tags: [thebe-init, remove-input]
 
 #thebe-init + remove-input
@@ -117,13 +118,13 @@ else:
     print("All good!")
 ```
 
-```{code-cell}
+```{code-cell} ipython3
 # No thebe-init tag
 
 from datetime import datetime
 datetime.now()
 ```
 
-```{code-cell}
+```{code-cell} ipython3
 
 ```
