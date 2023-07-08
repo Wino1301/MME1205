@@ -12,20 +12,27 @@ kernelspec:
   name: python3
 ---
 
-<script type="text/javascript" src="https://unpkg.com/thebe@rc/lib/index.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/thebe@thebe@rc/lib/thebe.css" />
+<!-- Configure and load Thebe !-->
+<script type="text/x-thebe-config">
+  {
+    requestKernel: true,
+    binderOptions: {
+      repo: "Wino1301/MME1205",
+    },
+    codeMirrorConfig: {theme: "blackboard"},
+  }
+</script>
+<script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
 
 +++
 
-<script type="text/x-thebe-config">
-  {
-      useBinder: true,
-      binderSettings: {
-          repo: "Wino1301/MME1205"
-      },
-      mountActivateWidget: true,
-      mountStatusWidget: true,
-  }
+<button id="activateButton"  style="width: 150px; height: 45px; font-size: 1.5em;">Activate</button>
+<script>
+var bootstrapThebe = function() {
+    thebelab.bootstrap();
+}
+
+document.querySelector("#activateButton").addEventListener('click', bootstrapThebe)
 </script>
 
 +++
@@ -50,16 +57,16 @@ This page serves as an exmaple to use Thebe in live class
 
 Return the value of raising 5 to the power of 10
 
-```{code-cell} ipython3
-:tags: [thebe-init]
++++ {"tags": ["thebe-init"]}
 
+<pre data-executable="true" data-language="python">
 #Your code here
 5**10
-```
+</pre>
 
-```{code-cell} ipython3
-:tags: [thebe-init]
++++ {"tags": ["thebe-init"]}
 
+<pre data-executable="true" data-language="python">
 # Only thebe-init tag
 
 # Run hidden tests using assert statements
@@ -81,38 +88,12 @@ if q1 != 0:
     print("Try again!")
 else: 
     print("All good!")
-```
+</pre>
 
-```{code-cell} ipython3
-:tags: [thebe-init, hide-input]
++++ {"tags": ["thebe-init", "hide-input"]}
 
-# thebe-init + hide-input
-
-# Run hidden tests using assert statements
-q1 = 0
-try: 
-    assert _ == 9765625
-except: 
-    q1 += 1
-    print("That is not the correct answer")
-    
-try:
-    assert isinstance(_, int)
-except: 
-    q1 += 1
-    print("Result is not int")
-
-print("Hidden Tests Completed")
-if q1 != 0:
-    print("Try again!")
-else: 
-    print("All good!")
-```
-
-```{code-cell} ipython3
-:tags: [thebe-init, remove-input]
-
-#thebe-init + remove-input
+<pre data-executable="true" data-language="python">
+# Only thebe-init tag
 
 # Run hidden tests using assert statements
 q1 = 0
@@ -133,7 +114,33 @@ if q1 != 0:
     print("Try again!")
 else: 
     print("All good!")
-```
+</pre>
+
++++ {"tags": ["thebe-init", "remove-input"]}
+
+<pre data-executable="true" data-language="python">
+# Only thebe-init tag
+
+# Run hidden tests using assert statements
+q1 = 0
+try: 
+    assert _ == 9765625
+except: 
+    q1 += 1
+    print("That is not the correct answer")
+    
+try:
+    assert isinstance(_, int)
+except: 
+    q1 += 1
+    print("Result is not int")
+
+print("Hidden Tests Completed")
+if q1 != 0:
+    print("Try again!")
+else: 
+    print("All good!")
+</pre>
 
 ```{code-cell} ipython3
 # No thebe-init tag
@@ -141,6 +148,8 @@ else:
 from datetime import datetime
 datetime.now()
 ```
+
+
 
 ```{code-cell} ipython3
 
