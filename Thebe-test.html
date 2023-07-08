@@ -392,7 +392,7 @@ document.write(`
     binderOptions: {
       repo: "Wino1301/MME1205",
     },
-    
+    codeMirrorConfig: {theme: "blackboard"},
   }
 </script>
 <script src="https://unpkg.com/thebe@latest/lib/index.js"></script><p><button id="activateButton"  style="width: 150px; height: 45px; font-size: 1.5em;">Activate</button></p>
@@ -425,93 +425,27 @@ document.querySelector("#activateButton").addEventListener('click', bootstrapThe
 <pre data-executable="true" data-language="python">
 #Your code here
 5**10
-</pre><div class="cell tag_thebe-init docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Only thebe-init tag</span>
+</pre><pre data-executable="true" data-language="python" element hidden>
 
-<span class="c1"># Run hidden tests using assert statements</span>
-<span class="n">q1</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">try</span><span class="p">:</span> 
-    <span class="k">assert</span> <span class="n">_</span> <span class="o">==</span> <span class="mi">9765625</span>
-<span class="k">except</span><span class="p">:</span> 
-    <span class="n">q1</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;That is not the correct answer&quot;</span><span class="p">)</span>
+q1 = 0
+try: 
+    assert _ == 9765625
+except: 
+    q1 += 1
+    print("That is not the correct answer")
     
-<span class="k">try</span><span class="p">:</span>
-    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
-<span class="k">except</span><span class="p">:</span> 
-    <span class="n">q1</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Result is not int&quot;</span><span class="p">)</span>
+try:
+    assert isinstance(_, int)
+except: 
+    q1 += 1
+    print("Result is not int")
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hidden Tests Completed&quot;</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">q1</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Try again!&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span> 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;All good!&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>That is not the correct answer
-Result is not int
-Hidden Tests Completed
-Try again!
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell tag_thebe-init tag_hide-input docutils container">
-<details class="hide above-input">
-<summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell source</span>
-<span class="expanded">Hide code cell source</span>
-</summary>
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># thebe-init + hide-input</span>
-
-<span class="c1"># Run hidden tests using assert statements</span>
-<span class="n">q1</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">try</span><span class="p">:</span> 
-    <span class="k">assert</span> <span class="n">_</span> <span class="o">==</span> <span class="mi">9765625</span>
-<span class="k">except</span><span class="p">:</span> 
-    <span class="n">q1</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;That is not the correct answer&quot;</span><span class="p">)</span>
-    
-<span class="k">try</span><span class="p">:</span>
-    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
-<span class="k">except</span><span class="p">:</span> 
-    <span class="n">q1</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Result is not int&quot;</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hidden Tests Completed&quot;</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">q1</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Try again!&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span> 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;All good!&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</details>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>That is not the correct answer
-Result is not int
-Hidden Tests Completed
-Try again!
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell tag_thebe-init tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>That is not the correct answer
-Result is not int
-Hidden Tests Completed
-Try again!
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
+print("Hidden Tests Completed")
+if q1 != 0:
+    print("Try again!")
+else: 
+    print("All good!")
+</pre><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># No thebe-init tag</span>
 
@@ -521,7 +455,7 @@ Try again!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>datetime.datetime(2023, 7, 7, 22, 0, 50, 198412)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>datetime.datetime(2023, 7, 7, 23, 35, 6, 651631)
 </pre></div>
 </div>
 </div>
