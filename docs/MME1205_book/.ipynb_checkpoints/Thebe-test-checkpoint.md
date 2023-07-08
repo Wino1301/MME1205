@@ -12,7 +12,24 @@ kernelspec:
   name: python3
 ---
 
-(launch:thebe)=
+<script type="text/javascript" src="https://unpkg.com/thebe@rc/lib/index.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/thebe@thebe@rc/lib/thebe.css" />
+
++++
+
+<script type="text/x-thebe-config">
+  {
+      useBinder: true,
+      binderSettings: {
+          repo: "Wino1301/MME1205"
+      },
+      mountActivateWidget: true,
+      mountStatusWidget: true,
+  }
+</script>
+
++++
+
 # Example of Live Feedback In Class
 
 +++
