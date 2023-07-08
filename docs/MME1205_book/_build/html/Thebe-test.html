@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Example of Live Feedback In Class &#8212; MME 1205 Intro to Data Science in Material Science Eng</title>
+    <title>Example of Different Feedback In Class &#8212; MME 1205 Intro to Data Science in Material Science Eng</title>
   
   
   
@@ -63,7 +63,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Thebe-test';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
+    <link rel="prev" title="MME 1205 - Graphics CRN: 22860 Spring 2023" href="Syllabus.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
   </head>
@@ -154,11 +154,16 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Example of Live Feedback In Class</a></li>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jbook-docs</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">1. Markdown Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">2. Content with notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">3. Notebooks with MyST Markdown</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Example</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Syllabus.html">MME 1205 - Graphics CRN: 22860 Spring 2023</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Example of Different Feedback In Class</a></li>
 </ul>
 
     </div>
@@ -362,7 +367,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Example of Live Feedback In Class</h1>
+    <h1>Example of Different Feedback In Class</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -372,8 +377,20 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#this-page-serves-as-an-exmaple-to-use-thebe-in-live-class">This page serves as an exmaple to use Thebe in live class</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1">Exercise 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#this-page-serves-as-an-example-on-how-to-use-thebe-in-live-class">This page serves as an example on how to use Thebe in live class</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ask-student-for-complete-answer">Ask student for complete answer</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1">Exercise 1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ask-student-for-complete-answer-non-editable-feedback">Ask student for complete answer + non-editable feedback</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#execerise-2">Execerise #2</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#predifine-variables-and-let-students-explore-outputs">Predifine variables and let students explore outputs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#excersice-3">Excersice #3</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-record-student-participation-by-prompting-date">Bonus: Record Student Participation by prompting date</a></li>
 </ul>
             </nav>
         </div>
@@ -391,24 +408,25 @@ document.write(`
     requestKernel: true,
     binderOptions: {
       repo: "Wino1301/MME1205",
+    
     },
-    codeMirrorConfig: {theme: "blackboard"},
   }
 </script>
-<script src="https://unpkg.com/thebe@latest/lib/index.js"></script><p><button id="activateButton"  style="width: 150px; height: 45px; font-size: 1.5em;">Activate</button></p>
+<script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
+<p><button id="activateButton"  style="width: 150px; height: 45px; font-size: 1.5em;">Activate</button></p>
 <script>
 var bootstrapThebe = function() {
     thebelab.bootstrap();
 }
 
 document.querySelector("#activateButton").addEventListener('click', bootstrapThebe)
-</script><div class="tex2jax_ignore mathjax_ignore section" id="example-of-live-feedback-in-class">
-<h1>Example of Live Feedback In Class<a class="headerlink" href="#example-of-live-feedback-in-class" title="Permalink to this headline">#</a></h1>
-<div class="section" id="this-page-serves-as-an-exmaple-to-use-thebe-in-live-class">
-<h2>This page serves as an exmaple to use Thebe in live class<a class="headerlink" href="#this-page-serves-as-an-exmaple-to-use-thebe-in-live-class" title="Permalink to this headline">#</a></h2>
+</script><div class="tex2jax_ignore mathjax_ignore section" id="example-of-different-feedback-in-class">
+<h1>Example of Different Feedback In Class<a class="headerlink" href="#example-of-different-feedback-in-class" title="Permalink to this headline">#</a></h1>
+<div class="section" id="this-page-serves-as-an-example-on-how-to-use-thebe-in-live-class">
+<h2>This page serves as an example on how to use Thebe in live class<a class="headerlink" href="#this-page-serves-as-an-example-on-how-to-use-thebe-in-live-class" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Thebe allows live code edits and runs using BinderHub</p></li>
-<li><p>Thebe allows hide-input so students does not have acces to cell contents</p></li>
+<li><p>Thebe allows non-editable options so students does not have acces to cell contents</p></li>
 </ul>
 <hr class="docutils" />
 <ul class="simple">
@@ -419,47 +437,115 @@ document.querySelector("#activateButton").addEventListener('click', bootstrapThe
 <li><p>Exam / Quizzes should be done entierly on colab or locally</p></li>
 </ul>
 </div>
+<div class="section" id="ask-student-for-complete-answer">
+<h2>Ask student for complete answer<a class="headerlink" href="#ask-student-for-complete-answer" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Learning concepts on the go.</p></li>
+<li><p>Test function features etc</p></li>
+</ul>
 <div class="section" id="exercise-1">
-<h2>Exercise 1<a class="headerlink" href="#exercise-1" title="Permalink to this headline">#</a></h2>
+<h3>Exercise 1<a class="headerlink" href="#exercise-1" title="Permalink to this headline">#</a></h3>
 <p>Return the value of raising 5 to the power of 10</p>
 <pre data-executable="true" data-language="python">
 #Your code here
-5**10
-</pre><pre data-executable="true" data-language="python" element hidden>
+</pre></div>
+</div>
+<div class="section" id="ask-student-for-complete-answer-non-editable-feedback">
+<h2>Ask student for complete answer + non-editable feedback<a class="headerlink" href="#ask-student-for-complete-answer-non-editable-feedback" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>For in session self assesment</p></li>
+<li><p>For narrative building</p></li>
+<li><p>Quizzes / Activities must hide the contents</p></li>
+</ul>
+<div class="section" id="execerise-2">
+<h3>Execerise #2<a class="headerlink" href="#execerise-2" title="Permalink to this headline">#</a></h3>
+<p>Make a list containing the numbers 1-10, name it i10</p>
+<pre data-executable="true" data-language="python">
+# Your Answer Here
+
+</pre> <pre data-executable="true" data-readonly=True data-language="python" >
 
 q1 = 0
 try: 
-    assert _ == 9765625
+    assert isinstance(i10, list)
 except: 
     q1 += 1
-    print("That is not the correct answer")
+    print("The result is not a list")
     
 try:
-    assert isinstance(_, int)
+    assert len(i10) == 10
 except: 
     q1 += 1
-    print("Result is not int")
+    print("The list is not complete")
+    
+try:
+    assert 0 not in i10
+except: 
+    q1 += 1
+    print("List contains a number not specified")
 
 print("Hidden Tests Completed")
 if q1 != 0:
     print("Try again!")
 else: 
     print("All good!")
-</pre><div class="cell docutils container">
+ </pre></div>
+</div>
+<div class="section" id="predifine-variables-and-let-students-explore-outputs">
+<h2>Predifine variables and let students explore outputs<a class="headerlink" href="#predifine-variables-and-let-students-explore-outputs" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Set variable names and structure ex pd.DataFrame</p></li>
+<li><p>Define plt axis config</p></li>
+</ul>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># No thebe-init tag</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Show defined variables</span>
 
-<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
-<span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>datetime.datetime(2023, 7, 7, 23, 35, 6, 651631)
+<span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">w</span> <span class="o">=</span> <span class="mi">2</span>
 </pre></div>
 </div>
 </div>
 </div>
+<p><strong>Below this cell is a hide-input cell</strong></p>
+<ul class="simple">
+<li><p>explore var y and z</p></li>
+</ul>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">z</span> <span class="o">=</span> <span class="mi">5</span> 
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<div class="section" id="excersice-3">
+<h3>Excersice #3<a class="headerlink" href="#excersice-3" title="Permalink to this headline">#</a></h3>
+<p>Print previously defined variables</p>
+<pre data-executable="true" data-language="python" >
+# Your Answer Here
+
+</pre></div>
+</div>
+<div class="section" id="bonus-record-student-participation-by-prompting-date">
+<h2>Bonus: Record Student Participation by prompting date<a class="headerlink" href="#bonus-record-student-participation-by-prompting-date" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>no editable</p></li>
+<li><p>date can’t be manipulated becuase it takes the kernel date, not user computer</p></li>
+</ul>
+<pre data-executable="true" data-readonly=True data-language="python" element>
+
+from datetime import datetime
+
+datetime.now()
+
+</pre>
 </div>
 </div>
 
@@ -495,12 +581,12 @@ else:
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="markdown-notebooks.html"
+       href="Syllabus.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Notebooks with MyST Markdown</p>
+        <p class="prev-next-title">MME 1205 - Graphics CRN: 22860 Spring 2023</p>
       </div>
     </a>
 </div></div>
@@ -521,8 +607,20 @@ else:
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#this-page-serves-as-an-exmaple-to-use-thebe-in-live-class">This page serves as an exmaple to use Thebe in live class</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1">Exercise 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#this-page-serves-as-an-example-on-how-to-use-thebe-in-live-class">This page serves as an example on how to use Thebe in live class</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ask-student-for-complete-answer">Ask student for complete answer</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1">Exercise 1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ask-student-for-complete-answer-non-editable-feedback">Ask student for complete answer + non-editable feedback</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#execerise-2">Execerise #2</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#predifine-variables-and-let-students-explore-outputs">Predifine variables and let students explore outputs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#excersice-3">Excersice #3</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-record-student-participation-by-prompting-date">Bonus: Record Student Participation by prompting date</a></li>
 </ul>
   </nav></div>
 
