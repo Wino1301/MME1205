@@ -385,17 +385,17 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <script type="text/javascript" src="https://unpkg.com/thebe@rc/lib/index.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/thebe@thebe@rc/lib/thebe.css" /><script type="text/x-thebe-config">
+  <!-- Configure and load Thebe !-->
+<script type="text/x-thebe-config">
   {
-      useBinder: true,
-      binderSettings: {
-          repo: "Wino1301/MME1205"
-      },
-      mountActivateWidget: true,
-      mountStatusWidget: true,
+    requestKernel: true,
+    binderOptions: {
+      repo: "Wino1301/MME1205",
+    },
+    
   }
-</script><p><button id="activateButton"  style="width: 150px; height: 45px; font-size: 1.5em;">Activate</button></p>
+</script>
+<script src="https://unpkg.com/thebe@latest/lib/index.js"></script><p><button id="activateButton"  style="width: 150px; height: 45px; font-size: 1.5em;">Activate</button></p>
 <script>
 var bootstrapThebe = function() {
     thebelab.bootstrap();
@@ -521,7 +521,7 @@ Try again!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>datetime.datetime(2023, 7, 7, 21, 45, 5, 713069)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>datetime.datetime(2023, 7, 7, 22, 0, 50, 198412)
 </pre></div>
 </div>
 </div>
