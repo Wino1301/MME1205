@@ -1,5 +1,6 @@
 ---
 jupytext:
+  formats: md:myst
   text_representation:
     extension: .md
     format_name: myst
@@ -31,14 +32,14 @@ This page serves as an exmaple to use Thebe in live class
 
 Return the value of raising 5 to the power of 10
 
-```{code-cell} ipython3
+```{code-cell}
 :tags: [thebe-init]
 
 #Your code here
 5**10
 ```
 
-```{code-cell} ipython3
+```{code-cell}
 :tags: [thebe-init]
 
 # Only thebe-init tag
@@ -64,7 +65,7 @@ else:
     print("All good!")
 ```
 
-```{code-cell} ipython3
+```{code-cell}
 :tags: [thebe-init, hide-input]
 
 # thebe-init + hide-input
@@ -90,7 +91,7 @@ else:
     print("All good!")
 ```
 
-```{code-cell} ipython3
+```{code-cell}
 :tags: [thebe-init, remove-input]
 
 #thebe-init + remove-input
@@ -116,13 +117,13 @@ else:
     print("All good!")
 ```
 
-```{code-cell} ipython3
+```{code-cell}
 # No thebe-init tag
 
 from datetime import datetime
 datetime.now()
 ```
 
-```{code-cell} ipython3
+```{code-cell}
 
 ```
