@@ -385,7 +385,24 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="example-of-live-feedback-in-class">
+  <script type="text/javascript" src="https://unpkg.com/thebe@rc/lib/index.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/thebe@thebe@rc/lib/thebe.css" /><script type="text/x-thebe-config">
+  {
+      useBinder: true,
+      binderSettings: {
+          repo: "Wino1301/MME1205"
+      },
+      mountActivateWidget: true,
+      mountStatusWidget: true,
+  }
+</script><p><button id="activateButton"  style="width: 150px; height: 45px; font-size: 1.5em;">Activate</button></p>
+<script>
+var bootstrapThebe = function() {
+    thebelab.bootstrap();
+}
+
+document.querySelector("#activateButton").addEventListener('click', bootstrapThebe)
+</script><div class="tex2jax_ignore mathjax_ignore section" id="example-of-live-feedback-in-class">
 <h1>Example of Live Feedback In Class<a class="headerlink" href="#example-of-live-feedback-in-class" title="Permalink to this headline">#</a></h1>
 <div class="section" id="this-page-serves-as-an-exmaple-to-use-thebe-in-live-class">
 <h2>This page serves as an exmaple to use Thebe in live class<a class="headerlink" href="#this-page-serves-as-an-exmaple-to-use-thebe-in-live-class" title="Permalink to this headline">#</a></h2>
@@ -405,20 +422,10 @@ document.write(`
 <div class="section" id="exercise-1">
 <h2>Exercise 1<a class="headerlink" href="#exercise-1" title="Permalink to this headline">#</a></h2>
 <p>Return the value of raising 5 to the power of 10</p>
-<div class="cell tag_thebe-init docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Your code here</span>
-<span class="mi">5</span><span class="o">**</span><span class="mi">10</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9765625
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell tag_thebe-init docutils container">
+<pre data-executable="true" data-language="python">
+#Your code here
+5**10
+</pre><div class="cell tag_thebe-init docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Only thebe-init tag</span>
 
@@ -445,8 +452,10 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hidden Tests Completed
-All good!
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>That is not the correct answer
+Result is not int
+Hidden Tests Completed
+Try again!
 </pre></div>
 </div>
 </div>
@@ -484,16 +493,20 @@ All good!
 </div>
 </details>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hidden Tests Completed
-All good!
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>That is not the correct answer
+Result is not int
+Hidden Tests Completed
+Try again!
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell tag_thebe-init tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hidden Tests Completed
-All good!
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>That is not the correct answer
+Result is not int
+Hidden Tests Completed
+Try again!
 </pre></div>
 </div>
 </div>
@@ -508,7 +521,7 @@ All good!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>datetime.datetime(2023, 7, 7, 21, 32, 19, 575235)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>datetime.datetime(2023, 7, 7, 21, 45, 5, 713069)
 </pre></div>
 </div>
 </div>
